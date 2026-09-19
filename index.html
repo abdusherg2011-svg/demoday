@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FORMULA 1 | Главная арена автоспорта</title>
+    <!-- Подключение собственного веб-шрифта Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Titillium+Web:wght@300;400;600;700;900&display=swap" rel="stylesheet">
+    <!-- Подключение стилей -->
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+
+    <!-- Семантический тег header и nav (Flexbox) -->
+    <header class="site-header">
+        <div class="header-container">
+            <a href="#hero" class="logo">F1 <span>2026</span></a>
+            
+            <nav class="main-nav">
+                <button class="menu-toggle" id="menuToggle" aria-label="Открыть мобильное меню">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+                <ul class="nav-list">
+                    <li><a href="#hero" class="nav-link">Главная</a></li>
+                    <li><a href="#drivers" class="nav-link">Пилоты</a></li>
+                    <li><a href="#teams" class="nav-link">Команды</a></li>
+                    <li><a href="#circuits" class="nav-link">Трассы</a></li>
+                    <li><a href="#tech" class="nav-link">Технологии</a></li>
+                    <li><a href="#stats" class="nav-link">Статистика</a></li>
+                    <li><a href="#contact" class="nav-link">Опрос</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Основной контент сайта -->
+    <main class="site-main">
+
+        <!-- 1. Hero / Главный экран -->
+        <section id="hero" class="hero-section">
+            <div class="hero-content">
+                <span class="hero-subtitle">Официальный портал чемпионата</span>
+                <h1>FORMULA 1</h1>
+                <p>Вершина автоспорта: передовые технологии, высочайшие скорости, легендарные трассы и бескомпромиссная борьба пилотов.</p>
+                <div class="hero-actions">
+                    <a href="#drivers" class="btn-primary">Explore F1</a>
+                    <a href="#stats" class="btn-secondary">Статистика</a>
+                </div>
+            </div>
+            <div class="hero-image-box">
+                <img src="https://images.unsplash.com/photo-1568605117036-5fe5e7bab0b7?auto=format&fit=crop&w=1000&q=80" alt="Современный гоночный болид Формулы-1 на высокой скорости" class="hero-img">
+            </div>
+        </section>
+
+        <!-- 2. Раздел Drivers (Grid-карточки пилотов) -->
+        <section id="drivers" class="content-section">
+            <div class="container">
+                <h2 class="section-title">Легендарные <span>Пилоты</span></h2>
+                <div class="grid-cards">
+                    <article class="card">
+                        <img src="https://images.unsplash.com/photo-1508098682722-e99c43a406b2?auto=format&fit=crop&w=600&q=80" alt="Макс Ферстаппен в защитном шлеме" class="card-img">
+                        <div class="card-body">
+                            <h3>Макс Ферстаппен</h3>
+                            <span class="card-tag">Red Bull Racing</span>
+                            <p>Трехкратный чемпион мира, известный своим феноменальным контролем машины и агрессивным пилотажем.</p>
+                        </div>
+                    </article>
+                    <article class="card">
+                        <img src="https://images.unsplash.com/photo-1533473359331-0135ef1b58bf?auto=format&fit=crop&w=600&q=80" alt="Шарль Леклер на трассе Гран-при" class="card-img">
+                        <div class="card-body">
+                            <h3>Шарль Леклер</h3>
+                            <span class="card-tag">Scuderia Ferrari</span>
+                            <p>Маэстро квалификаций и главный символ итальянской команды, обладающий безупречной чистой скоростью.</p>
+                        </div>
+                    </article>
+                    <article class="card">
+                        <img src="https://images.unsplash.com/photo-1511919884226-fd3cad34687c?auto=format&fit=crop&w=600&q=80" alt="Льюис Хэмилтон в гоночной экипировке" class="card-img">
+                        <div class="card-body">
+                            <h3>Льюис Хэмилтон</h3>
+                            <span class="card-tag">Ferrari / Legend</span>
+                            <p>Семикратный чемпион мира и абсолютный рекордсмен по количеству побед в истории Формулы-1.</p>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- 3. Раздел Teams (Команды) -->
+        <section id="teams" class="content-section bg-alt">
+            <div class="container">
+                <h2 class="section-title">Команды <span>Конструкторов</span></h2>
+                <div class="grid-cards">
+                    <article class="card team-card">
+                        <div class="card-body">
+                            <h3>Red Bull Racing</h3>
+                            <span class="card-tag country">🇦🇹 Австрия</span>
+                            <p>Энергичная команда из Милтон-Кинса, задающая стандарты аэродинамической эффективности.</p>
+                        </div>
+                    </article>
+                    <article class="card team-card">
+                        <div class="card-body">
+                            <h3>Scuderia Ferrari</h3>
+                            <span class="card-tag country">🇮🇹 Италия</span>
+                            <p>Легендарная «Скудерия» — старейшая и самая титулованная команда в истории чемпионата мира.</p>
+                        </div>
+                    </article>
+                    <article class="card team-card">
+                        <div class="card-body">
+                            <h3>McLaren F1 Team</h3>
+                            <span class="card-tag country">🇬🇧 Великобритания</span>
+                            <p>Британский гоночный коллектив с богатейшей историей и триумфальным возвращением на вершину.</p>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- 4. Раздел Circuits (Знаменитые трассы) -->
+        <section id="circuits" class="content-section">
+            <div class="container">
+                <h2 class="section-title">Знаменитые <span>Трассы</span></h2>
+                <div class="grid-cards">
+                    <article class="card">
+                        <img src="https://images.unsplash.com/photo-1568605117036-5fe5e7bab0b7?auto=format&fit=crop&w=600&q=80" alt="Трасса в Монако, Монте-Карло" class="card-img">
+                        <div class="card-body">
+                            <h3>Monaco (Monte Carlo)</h3>
+                            <p class="track-meta"><strong>Страна:</strong> Монако | <strong>Длина:</strong> 3.337 км</p>
+                            <p>Легендарная городская трасса в узких улочках княжества, где цена малейшей ошибки — барьер.</p>
+                        </div>
+                    </article>
+                    <article class="card">
+                        <img src="https://images.unsplash.com/photo-1508098682722-e99c43a406b2?auto=format&fit=crop&w=600&q=80" alt="Автодром Монца в Италии" class="card-img">
+                        <div class="card-body">
+                            <h3>Monza (Temple of Speed)</h3>
+                            <p class="track-meta"><strong>Страна:</strong> Италия | <strong>Длина:</strong> 5.793 км</p>
+                            <p>Храм скорости с минимальным уровнем прижимной силы и бешеной динамикой на прямых.</p>
+                        </div>
+                    </article>
+                    <article class="card">
+                        <img src="https://images.unsplash.com/photo-1533473359331-0135ef1b58bf?auto=format&fit=crop&w=600&q=80" alt="Трасса Сузука в Японии" class="card-img">
+                        <div class="card-body">
+                            <h3>Suzuka Circuit</h3>
+                            <p class="track-meta"><strong>Страна:</strong> Япония | <strong>Длина:</strong> 5.807 км</p>
+                            <p>Уникальный трек в форме восьмерки с невероятными скоростными связками поворотов.</p>
+                        </div>
+                    </article>
+                    <article class="card">
+                        <img src="https://images.unsplash.com/photo-1511919884226-fd3cad34687c?auto=format&fit=crop&w=600&q=80" alt="Трасса Спа-Франкоршам в Бельгии" class="card-img">
+                        <div class="card-body">
+                            <h3>Spa-Francorchamps</h3>
+                            <p class="track-meta"><strong>Страна:</strong> Бельгия | <strong>Длина:</strong> 7.004 км</p>
+                            <p>Дом культового поворота Eau Rouge и непредсказуемой лесной погоды в Арденнах.</p>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- 5. Раздел F1 Technology (Технологии) -->
+        <section id="tech" class="content-section bg-alt">
+            <div class="container">
+                <h2 class="section-title">Технологии <span>Формулы-1</span></h2>
+                <div class="grid-cards">
+                    <div class="card tech-card">
+                        <h3>Аэродинамика</h3>
+                        <p>Сложная система закрылков и днища создает колоссальную прижимную силу, позволяя болидам "прилипать" к асфальту в поворотах.</p>
+                    </div>
+                    <div class="card tech-card">
+                        <h3>DRS (Система обгонов)</h3>
+                        <p>Механизм регулировки заднего антикрыла, открывающийся на прямых для снижения сопротивления воздуха.</p>
+                    </div>
+                    <div class="card tech-card">
+                        <h3>Hybrid Power Unit</h3>
+                        <p>Сверхмощный турбомотор в сочетании с передовыми системами рекуперации кинетической и тепловой энергии.</p>
+                    </div>
+                    <div class="card tech-card">
+                        <h3>Карбоновое шасси</h3>
+                        <p>Углеродное волокно обеспечивает исключительную прочность монокока при минимальном весе конструкции.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 6. Раздел F1 Stats (Использование тега <table>) -->
+        <section id="stats" class="content-section">
+            <div class="container">
+                <h2 class="section-title">Статистика <span>Сезона</span></h2>
+                <div class="table-wrapper">
+                    <table class="f1-table">
+                        <thead>
+                            <tr>
+                                <th>Поз</th>
+                                <th>Пилот</th>
+                                <th>Команда</th>
+                                <th>Победы</th>
+                                <th>Очки</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>1</td>
+                                <td>Макс Ферстаппен</td>
+                                <td>Red Bull Racing</td>
+                                <td>8</td>
+                                <td>310</td>
+                            </tr>
+                            <tr>
+                                <td>2</td>
+                                <td>Шарль Леклер</td>
+                                <td>Scuderia Ferrari</td>
+                                <td>3</td>
+                                <td>245</td>
+                            </tr>
+                            <tr>
+                                <td>3</td>
+                                <td>Ландо Норрис</td>
+                                <td>McLaren</td>
+                                <td>2</td>
+                                <td>228</td>
+                            </tr>
+                            <tr>
+                                <td>4</td>
+                                <td>Льюис Хэмилтон</td>
+                                <td>Ferrari</td>
+                                <td>1</td>
+                                <td>190</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </section>
+
+        <!-- 7. Раздел Contact / Quiz (Форма с label и required) -->
+        <section id="contact" class="content-section bg-alt">
+            <div class="container form-container">
+                <h2 class="section-title">Опрос и <span>Связь</span></h2>
+                <form id="f1QuizForm" class="f1-form">
+                    <div class="form-group">
+                        <label for="userName">Ваше имя:</label>
+                        <input type="text" id="userName" name="userName" required placeholder="Введите ваше имя">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="userEmail">Ваш Email:</label>
+                        <input type="email" id="userEmail" name="userEmail" required placeholder="name@example.com">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="favoriteDriver">Любимый пилот:</label>
+                        <select id="favoriteDriver" name="favoriteDriver" required>
+                            <option value="">-- Выберите пилота --</option>
+                            <option value="verstappen">Макс Ферстаппен</option>
+                            <option value="leclerc">Шарль Леклер</option>
+                            <option value="hamilton">Льюис Хэмилтон</option>
+                            <option value="norris">Ландо Норрис</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="userMessage">Ваш вопрос или сообщение:</label>
+                        <textarea id="userMessage" name="userMessage" rows="4" placeholder="Ваше мнение о гонке..."></textarea>
+                    </div>
+
+                    <button type="submit" class="btn-primary submit-btn">Отправить форму</button>
+                    
+                    <div id="formSuccessMessage" class="success-message hidden">
+                        Спасибо! Ваша заявка успешно отправлена.
+                    </div>
+                </form>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Семантический футер (Flexbox) -->
+    <footer class="site-footer">
+        <div class="footer-container">
+            <div class="footer-brand">
+                <a href="#hero" class="logo">F1 <span>2026</span></a>
+                <p>&copy; 2026 Formula One World Championship Limited. Все права защищены.</p>
+            </div>
+            <div class="footer-nav">
+                <h4>Навигация</h4>
+                <ul>
+                    <li><a href="#hero" class="nav-link">Главная</a></li>
+                    <li><a href="#drivers" class="nav-link">Пилоты</a></li>
+                    <li><a href="#teams" class="nav-link">Команды</a></li>
+                    <li><a href="#stats" class="nav-link">Статистика</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Подключение скрипта -->
+    <script src="index.js"></script>
+</body>
+</html>
